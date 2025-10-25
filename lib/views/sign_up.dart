@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_ui_1/components/input.dart';
 import 'package:login_ui_1/components/login_icon.dart';
-import 'package:login_ui_1/views/sign_up.dart';
+import 'package:login_ui_1/views/sign_in.dart';
 
 import '../components/bottom_left_border.dart';
 import '../components/upper_right_circles.dart';
 import '../styles/colors.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({super.key});
+class SignUp extends StatelessWidget {
+  const SignUp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class SignIn extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Login here",
+                    "Create Account",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                       fontSize: 30,
@@ -38,12 +38,12 @@ class SignIn extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width / 1.5,
+                    width: MediaQuery.of(context).size.width / 1.2,
                     child: Text(
-                      "Welcome back you’ve been missed!",
+                      "Create an account so you can explore all the existing jobs",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.w700,
                         color: Colors.black,
                       ),
@@ -65,20 +65,12 @@ class SignIn extends StatelessWidget {
                       textInputType: TextInputType.visiblePassword,
                     ),
                   ),
-                  SizedBox(height: 35),
-                  Container(
-                    alignment: Alignment.centerRight,
-                    padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 10,
-                    ),
-                    child: Text(
-                      "Forgot Password?",
-                      textAlign: TextAlign.end,
-                      style: GoogleFonts.poppins(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                        color: primaryColor,
-                      ),
+                  SizedBox(height: 30),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width / 1.2,
+                    child: Input(
+                      hintText: 'Confirm Password',
+                      textInputType: TextInputType.visiblePassword,
                     ),
                   ),
                   SizedBox(height: 35),
@@ -103,7 +95,7 @@ class SignIn extends StatelessWidget {
                             ],
                           ),
                           child: Text(
-                            "Sign In",
+                            "Sign Up",
                             style: GoogleFonts.poppins(
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
@@ -118,12 +110,12 @@ class SignIn extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute<void>(
-                              builder: (context) => const SignUp(),
+                              builder: (context) => const SignIn(),
                             ),
                           );
                         },
                         child: Text(
-                          "Create new account",
+                          "Already have an account?",
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold,
                             color: textColor2,

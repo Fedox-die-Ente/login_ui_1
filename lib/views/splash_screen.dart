@@ -4,6 +4,7 @@ import 'package:login_ui_1/components/bottom_left_border.dart';
 import 'package:login_ui_1/components/upper_right_circles.dart';
 import 'package:login_ui_1/styles/colors.dart';
 import 'package:login_ui_1/views/sign_in.dart';
+import 'package:login_ui_1/views/sign_up.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -80,7 +81,6 @@ class SplashScreen extends StatelessWidget {
                     InkWell(
                       child: GestureDetector(
                         onTap: () {
-                          //
                           Navigator.push(
                             context,
                             MaterialPageRoute<void>(
@@ -117,7 +117,14 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (context) => const SignUp(),
+                          ),
+                        );
+                      },
                       child: Container(
                         padding: EdgeInsets.symmetric(
                           vertical: 15,
