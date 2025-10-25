@@ -1,7 +1,7 @@
 name: login_ui_1
-description: "A new Flutter project."
+description: "A Flutter application with a login UI using Google Fonts."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0+1
 
 environment:
   sdk: ^3.9.2
