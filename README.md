@@ -11,7 +11,7 @@ This is a simple login UI written in Flutter. I did this to learn more about Flu
 
 <div align="center">
 
-<img src=".github/design.png" alt="Desktop Screenshot" width="80%">
+<img src=".github/uh.png" alt="Desktop Screenshot" width="80%">
 
 </div>
 
@@ -30,7 +30,7 @@ This is a simple login UI written in Flutter. I did this to learn more about Flu
 
 <div align="center">
 
-**[⬆ Back to Top](#-project-name)**
+**[⬆ Back to Top](#-flutter-login-ui---1)**
 
 Made with ❤️ by [Florian](https://github.com/Fedox-die-Ente)
 
