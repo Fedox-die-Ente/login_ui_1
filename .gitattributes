@@ -1,0 +1,12 @@
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.cxx linguist-vendored
+*.h linguist-vendored
+*.hpp linguist-vendored
+*.hh linguist-vendored
+
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
+
+build/** linguist-vendored
+cmake/** linguist-vendored
